@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div {
+        margin-top: 100px;
+        margin-left: 500px;
+        background-color: blue;
+        display: inline-block;
+        height: 20px;
+        width: 400px;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      #content {
+        margin-top: 100px;
+        margin-left: 500px;
+        height: 50px;
+        width: 400px;
+        background-color: white;
+        margin-top: 10px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div onclick="ContentHide()" id="div">Click Me</div>
+    <div id="content">
+      This is web tech tutorials Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Fugiat aliquam laborum repellendus voluptates aut nihil
+      voluptas corporis non quae architecto, quibusdam, sequi officia tempore
+      voluptatum et accusantium nisi recusandae officiis!
+    </div>
+    <script>
+      function ContentHide(){
+        let content=document.getElementById("content");
+        if(content.style.display==="none" || content.style.display===""){
+          content.style.display="block";
+        }
+        else{
+          content.style.display="none";
+        }
+
+      }
+      
+      //console.log(content);
+      
+    </script>
+  </body>
+</html>

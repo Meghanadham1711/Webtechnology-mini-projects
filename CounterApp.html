@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CounterApp</title>
+    <style>
+        #div{
+            margin:100px  auto;
+            height: 200px;
+            width: 300px;
+            border: 2px solid brown;
+            text-align: center;
+        }
+        #btn{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #btn>button{
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <h3>Counter App</h3>
+        <input type="text" id="res"><br><br>
+        <div id="btn">
+            <button onclick="inc()">Increase</button>
+        <button onclick="des()">Decrease</button>
+        <button onclick="reset()">Reset</button>
+        </div>
+        
+    </div>
+    <script>
+        let res=document.getElementById("res")
+        let count=0;
+        function inc(){
+            count=count+1;
+            res.value=count;
+            
+
+
+        }
+        function des(){
+            count=count-1;
+            res.value=count;
+
+        }
+        function reset(){
+            count=0;
+            res.value=0;
+        }
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div{
+            display: flex;
+        /* display: inline-block; */
+            height: 120px;
+            width: 350px;
+            margin: 100px auto;
+            border: 2px solid red;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+    <label for="name">Enter text:</label>
+    <input type="text" id="name">
+    <button onclick="count()">Click</button>
+    <input type="text" name="" id="len">
+    </div>
+    
+</body>
+<script>
+    
+    //console.log(input);
+    function count(){
+        let input=document.getElementById("name").value;
+
+        console.log(input);
+        let len=document.getElementById("len");
+        len.value=input.length;
+        
+
+
+    }
+    
+
+</script>
+</html>
